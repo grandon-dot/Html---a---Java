@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación 2 - Instrucciones y Rúbrica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="instrucciones">
+        <h2>📘 Evaluación 2 - Clonar un blog con JavaScript Vanilla</h2>
+
+        <p>
+            <strong>Asignatura:</strong> Programación Front End &nbsp;|&nbsp;
+            <strong>Modalidad:</strong> Individual &nbsp;|&nbsp;
+            <strong>Nota máxima:</strong> 7,0
+        </p>
+
+        <p class="docente">
+            <strong>Docente:</strong> Lautaro Fernando Cornejo Arcos &nbsp;|&nbsp;
+            <strong>Email:</strong> <a href="mailto:lautaro.cornejo@inacapmail.cl">lautaro.cornejo@inacapmail.cl</a>
+        </p>
+
+        <p class="aviso-vanilla">
+            ⚠️ <strong>Importante:</strong> Esta evaluación se debe resolver <strong>exclusivamente con JavaScript Vanilla</strong> (puro).
+            No se permite el uso de librerías ni frameworks externos (jQuery, React, Vue, Angular, Bootstrap JS, etc.).
+        </p>
+
+        <h3>🎯 Objetivos de aprendizaje</h3>
+        <ul>
+            <li>Comprender cómo JavaScript manipula el DOM en tiempo real.</li>
+            <li>Aplicar métodos básicos: <code>createElement</code>, <code>appendChild</code>, <code>textContent</code>, <code>classList</code>, <code>setAttribute</code>.</li>
+            <li>Recorrer arrays de datos para generar contenido dinámico.</li>
+            <li>Asociar eventos a elementos creados desde JS (<code>addEventListener</code>).</li>
+            <li>Separar correctamente HTML, CSS y JavaScript.</li>
+        </ul>
+
+        <h3>📝 Instrucciones</h3>
+        <ol>
+            <li>Trabaja dentro de la carpeta <strong>evaluacion 2</strong>. Contiene los siguientes archivos:
+                <ul>
+                    <li><code>index.html</code> → archivo base (NO se modifica el contenido HTML).</li>
+                    <li><code>script.js</code> → archivo donde debes trabajar.</li>
+                    <li><code>styles.css</code> → estilos ya provistos (NO modificar).</li>
+                    <li><code>blog-original.html</code> → archivo de referencia visual del blog a replicar.</li>
+                    <li><code>evaluacion2.html</code> → este documento (instrucciones y rúbrica).</li>
+                </ul>
+            </li>
+            <li>Tu objetivo es que <code>index.html</code> se vea <strong>idéntico</strong> a <code>blog-original.html</code>, pero generando todo el contenido desde <code>script.js</code>.</li>
+            <li><strong>No</strong> puedes agregar etiquetas HTML dentro de <code>index.html</code> (excepto el <code>div#app</code> ya existente).</li>
+            <li>Debes completar las funciones <code>crearHeader()</code>, <code>crearArticulos()</code>, <code>crearSidebar()</code> y <code>crearFooter()</code>.</li>
+            <li>El botón <em>"Leer más"</em> debe mostrar un <code>alert()</code> con el título del post correspondiente.</li>
+            <li>Sube el resultado al repositorio o entrégalo comprimido en <code>.zip</code> con tu nombre.</li>
+        </ol>
+
+        <h3>📊 Rúbrica de evaluación (Nota máxima: 7,0)</h3>
+        <table class="rubrica">
+            <thead>
+                <tr>
+                    <th>Criterio</th>
+                    <th>Descripción</th>
+                    <th>Puntaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Header y navegación</td>
+                    <td>Crea correctamente el <code>&lt;header&gt;</code>, título, lema y menú con <code>nav &gt; ul &gt; li &gt; a</code> usando JS.</td>
+                    <td>1,0</td>
+                </tr>
+                <tr>
+                    <td>Sección de artículos</td>
+                    <td>Recorre el array <code>posts</code> y genera dinámicamente cada <code>&lt;article&gt;</code> con título, fecha/autor, contenido y botón.</td>
+                    <td>2,0</td>
+                </tr>
+                <tr>
+                    <td>Sidebar de categorías</td>
+                    <td>Genera el <code>&lt;aside&gt;</code> con título y lista de categorías desde un array.</td>
+                    <td>1,0</td>
+                </tr>
+                <tr>
+                    <td>Footer</td>
+                    <td>Crea el <code>&lt;footer&gt;</code> con el copyright correctamente.</td>
+                    <td>0,5</td>
+                </tr>
+                <tr>
+                    <td>Eventos (interactividad)</td>
+                    <td>El botón "Leer más" muestra un <code>alert</code> con el título del post asociado.</td>
+                    <td>1,0</td>
+                </tr>
+                <tr>
+                    <td>Buenas prácticas</td>
+                    <td>Uso adecuado del DOM (sin <code>innerHTML</code> masivo), código indentado, nombres claros, sin errores en consola.</td>
+                    <td>1,0</td>
+                </tr>
+                <tr>
+                    <td>Resultado visual</td>
+                    <td>El resultado final se ve idéntico a <code>blog-original.html</code>.</td>
+                    <td>0,5</td>
+                </tr>
+                <tr class="total">
+                    <td colspan="2"><strong>NOTA MÁXIMA</strong></td>
+                    <td><strong>7,0</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>⚠️ Consideraciones</h3>
+        <ul>
+            <li>Trabajo <strong>individual</strong>.</li>
+            <li>Plagio o copia → nota mínima (1,0).</li>
+            <li>Entrega fuera de plazo descuenta 1,0 punto por día.</li>
+            <li>Fecha de entrega máximo 15/05/2026 23:59 luego comienza a reguir descuento.</li>
+        </ul>
+
+        <h3>🔗 Enlaces rápidos</h3>
+        <p>
+            <a class="btn-link" href="blog-original.html" target="_blank">Ver blog de referencia</a>
+            <a class="btn-link" href="index.html" target="_blank">Ver tu resultado (index.html)</a>
+        </p>
+    </section>
+
+</body>
+</html>
